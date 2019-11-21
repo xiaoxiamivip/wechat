@@ -1,4 +1,4 @@
-module xiaoxiami.vip/xiaoxiami
+module github.com/xiaoxiamivip/wechat
 
 go 1.13
 
