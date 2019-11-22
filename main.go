@@ -8,7 +8,6 @@ import (
 
 func main() {
 	app := iris.Default()
-
 	app.Use(recover.New())
 	app.Use(logger.New())
 	routeInit(app)
