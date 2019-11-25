@@ -11,7 +11,8 @@ var engines []*xorm.Engine
 
 func InitEngine(ctx iris.Context) {
 	for i := 0; i < 10; i++ {
-		engine, err := xorm.NewEngine("mysql", "root:127.0.0.1@/wechat?charset=utf8")
+		//engine, err := xorm.NewEngine("mysql", "root:123456@/wechat?charset=utf8")
+		engine, err := xorm.NewEngine("mysql", "root:123456@tcp(127.0.0.1:3306)/test?charset=utf8")
 		if err != nil {
 			ctx.Application().Logger().Warnf("database conect err:%s", err)
 			continue
